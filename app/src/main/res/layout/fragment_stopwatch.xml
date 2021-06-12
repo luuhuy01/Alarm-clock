@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StopwatchFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtStopwatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="148dp"
+            android:text="Bấm giờ"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timeStopWatch"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:layout_below="@+id/txtStopwatch"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="-7dp"
+            android:paddingTop="60dp"
+            android:text="00:00,00"
+            android:textAlignment="center"
+            android:textSize="60dp"
+            android:textColor="@color/black"/>
+
+        <ListView
+            android:id="@+id/listTimeStop"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:layout_above="@+id/btnWrite"
+            android:layout_marginBottom="11dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnWrite"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="115dp"
+            android:enabled="false"
+            android:background="@drawable/button_custom_write"
+            android:text="Ghi"
+            android:textSize="15dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="115dp"
+            android:text="Bắt đầu"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_custom_start" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
